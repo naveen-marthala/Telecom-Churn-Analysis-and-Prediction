@@ -49,7 +49,7 @@ The objective of this contest is to predict customer churn. We are providing you
 <b>Target Variable:</b>  
 Churn: if the customer has churned (1=yes; 0 = no)
 
--------------
+----------------
 
 <b>About Code:</b>  
 Logistic Regression and Random Forest Classification has been used for prediction.
