@@ -44,6 +44,12 @@ summary(full_fit_out_2) # AIC: 1499.1
 # this model had more AIC compared to the previous model
 
 
+# confidence intervals
+# These confidence intervals (CI) are ranges of values that are likely
+# to contain the true value of the coefficient for each term in the model.
+confint(full_fit_out_2)
+
+# 
 
 # let's check VIF statistics
 library(car)
@@ -67,6 +73,7 @@ confusionMatrix(data = train_probss_fact, reference = data_probs_fact)
 
 test_probs <- predict(full_fit_out_2, type = "response", newdata = telecom_out_test)
 test_probss <- ifelse(test_probs > 0.5, 1 , 0)
+# test_probss <- ifelse(test_probs > 0.4, 1 , 0)
 test_probss_fact <- as.factor(test_probss)
 # probs of data
 data_probs_test <- ifelse(telecom_out_test$churn == "TRUE", 1 , 0)
@@ -76,6 +83,16 @@ library(caret)
 confusionMatrix(data = test_probss_fact, reference = data_probs_test_fact)
 # Accuracy with new data: 0.8593
 
+
+# plotting Area Under Curve(AUC)
+library(ROCR)
+library(Metrics)
+pr <- prediction(test_probss, data_probs_test)
+perf <- performance(pr,measure = "tpr",x.measure = "fpr")
+plot(perf)
+auc(data_probs_test,test_probss) 
+#0.59 with 1, if prob > 0.5 (normal)
+#0.61 with 1, if prob > 0.4
 
 
 
