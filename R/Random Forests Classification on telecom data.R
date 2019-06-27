@@ -116,7 +116,7 @@ rf_no_out_pred <- predict(random_forest_no_out_train, newdata = telecom_no_out_t
 confusionMatrix(rf_no_out_pred, telecom_no_out_test$churn)
 # Accuracy : 0.9448 (94.48%)
 # let's also calculate recall and precision
-(recall_out <- 855/(855+4))
+(recall_no_out <- 855/(855+4))
 # 0.9953434
-(precision_out <- 855/(855+51))
+(precision_no_out <- 855/(855+51))
 # 0.9437086
