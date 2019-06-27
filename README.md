@@ -72,8 +72,8 @@ The Recall, Precision , AUC and Accuracy reports are
   </tr>
   <tr>
 	  <th>Logistic Regression</th>
-	  <td></td>
-	  <td></td>
+	  <td>97</td>
+	  <td>87</td>
     	  <td>86.55%</td>
   </tr>
 </table>
