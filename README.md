@@ -26,10 +26,10 @@ In the targeted approach the company tries to identify in advance customers who 
 The objective of this contest is to predict customer churn. We are providing you a public dataset that has customer usage pattern and if the customer has churned or not. We expect you to develop an algorithm to predict the churn score based on usage pattern. The predictors provided are as follows:
 
 <ul>
-	<li>account length</li>
-	<li>international plan</li>
-	<li>voice mail plan</li>
-	<li>number of voice mail messages</li>
+	<li>account length in days</li>
+	<li>had international plan or not</li>
+	<li>had voice mail plan or not</li>
+	<li>number of voice mail messages a person made</li>
 	<li>total day minutes used</li>
 	<li>day calls made</li>
 	<li>total day charge</li>
@@ -42,7 +42,7 @@ The objective of this contest is to predict customer churn. We are providing you
 	<li>total international minutes used</li>
 	<li>total international calls made</li>
 	<li>total international charge</li>
-	<li>number customer service calls made</li>
+	<li>number of customer service calls made</li>
 </ul>
  
 
@@ -77,6 +77,9 @@ The Recall, Precision , AUC and Accuracy reports are
     	  <td>86.55%</td>
   </tr>
 </table>
+  
 So, from the above results, it's obvious that,  
-1. Logistic Regression' model could capture the customers that were likely to churn(recall). But, not the ones that were not.
-2. Random Forest's model could capture a mix of both.
+<ol>
+	<li>Logistic Regression' model could capture the customers that were likely to churn(recall). But, not the ones that were not.</li>
+	<li>Random Forest's model could capture a mix of both.</li>
+</ol>
