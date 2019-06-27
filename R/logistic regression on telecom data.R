@@ -82,7 +82,11 @@ data_probs_test_fact <- as.factor(data_probs_test)
 library(caret)
 confusionMatrix(data = test_probss_fact, reference = data_probs_test_fact)
 # Accuracy with new data: 0.8593
-
+# let's also calculate recall and precision
+(recall_out <- 807/(807+24))
+# 0.9711191
+(precision_out <- 807/(807+113))
+# 0.8771739
 
 # plotting Area Under Curve(AUC)
 library(ROCR)
@@ -140,8 +144,8 @@ str(telecom_no_out_test)
 full_fit_no_out <- glm(churn~., data = telecom_no_out_train, family = binomial)
 summary(full_fit_no_out)    # AIC: 1574.2
 full_fit_no_out_2 <- glm(churn~total_day_charge+total_eve_charge+total_night_charge+
-                        total_intl_calls+total_intl_charge+customer_service_calls+
-                        international_plan+voice_mail_plan, data = telecom_no_out_train, family = binomial)
+                           total_intl_calls+total_intl_charge+customer_service_calls+
+                           international_plan+voice_mail_plan, data = telecom_no_out_train, family = binomial)
 summary(full_fit_no_out_2)  # AIC: 1567.7
 # full_fit_no_out_3 <- glm(churn~total_day_charge+total_eve_charge+
 #                            total_intl_calls+total_intl_charge+customer_service_calls+
@@ -181,10 +185,14 @@ data_no_probs_test_fact <- as.factor(data_no_probs_test)
 library(caret)
 confusionMatrix(data = test_no_probss_fact, reference = data_no_probs_test_fact)
 # Accuracy with new data: 0.8655 (86.55%)
+# let's also calculate recall and precision
+(recall_no_out <- 839/(839+20))
+# 0.9767171
+(precision_no_out <- 839/(839+114))
+# 0.8803778
 
 
 
-
-# Accuracy reports for test data using logistic regression
-# data with no outliers had 86.55%
-# data with outliers    had 85.93%
+# Recall reports for test data using logistic regression
+# data with no outliers had 97.67%
+# data with outliers    had 97.11%
