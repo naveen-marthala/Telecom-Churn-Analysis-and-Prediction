@@ -77,3 +77,6 @@ The Recall, Precision , AUC and Accuracy reports are
     	  <td>86.55%</td>
   </tr>
 </table>
+So, from the above results, it's obvious that,  
+1. Logistic Regression' model could capture the customers that were likely to churn(recall). But, not the ones that were not.
+2. Random Forest's model could capture a mix of both.
