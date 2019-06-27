@@ -61,20 +61,17 @@ The Recall, Precision , AUC and Accuracy reports are
 	  <th>algorithm</th>
 	  <th>Recall</th>
 	  <th>Precision</th>
-	  <th>AUC</th>
 	  <th>Accuracy</th>
   </tr>
   <tr>
     	  <th>Random Forest Classification</th>
 	  <td>94%</td>
 	  <td>99%</td>
-	  <td></td>
 	  <td>94.48%</td>
 	  
   </tr>
   <tr>
 	  <th>Logistic Regression</th>
-	  <td></td>
 	  <td></td>
 	  <td></td>
     	  <td>86.55%</td>
