@@ -25,7 +25,7 @@ In the targeted approach the company tries to identify in advance customers who 
 <b>Objective of this Contest:</b>  
 The objective of this contest is to predict customer churn. We are providing you a public dataset that has customer usage pattern and if the customer has churned or not. We expect you to develop an algorithm to predict the churn score based on usage pattern. The predictors provided are as follows:
 
-<ul>
+<ol>
 	<li>account length in days</li>
 	<li>had international plan or not</li>
 	<li>had voice mail plan or not</li>
@@ -43,7 +43,7 @@ The objective of this contest is to predict customer churn. We are providing you
 	<li>total international calls made</li>
 	<li>total international charge</li>
 	<li>number of customer service calls made</li>
-</ul>
+</ol>
  
 
 <b>Target Variable:</b>  
