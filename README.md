@@ -51,26 +51,28 @@ Churn: if the customer has churned (1=yes; 0 = no)
 
 ----------------
 
-<b>About Code:</b>  
+<b>About Prediction Results:</b>  
+For my analysis, recall was my target metric.  
+We care the most about capturing as many true positives (people who are likely to churn) with our model, and we’re less concerned that we may sweep in some false negatives (people who did not churn) along with them.  
 Logistic Regression and Random Forest Classification has been used for prediction.
-The Accuracy, Precision and Recall reports are
+The Recall, Precision and Accuracy reports are
 <table style="width:100%">
   <tr>
 	  <th>algorithm</th>
-	  <th>Accuracy</th>
-	  <th>Precision</th>
 	  <th>Recall</th>
+	  <th>Precision</th>
+	  <th>Accuracy</th>
   </tr>
   <tr>
     	  <th>Random Forest Classification</th>
-	  <td>94.48%</td>
-	  <td>99%</td>
 	  <td>94%</td>
+	  <td>99%</td>
+	  <td>94.48%</td>
   </tr>
   <tr>
 	  <th>Logistic Regression</th>
+	  <td></td>
+	  <td></td>
     	  <td>86.55%</td>
-	  <td></td>
-	  <td></td>
   </tr>
 </table>
