@@ -62,15 +62,15 @@ The Accuracy, Precision and Recall reports are
 	  <th>Recall</th>
   </tr>
   <tr>
-    	  <th>Logistic Regression</th>
-    	  <td>86.55%</td>
-	  <td></td>
-	  <td></td>
-  </tr>
-  <tr>
-	  <th>Random Forest Classification</th>
+    	  <th>Random Forest Classification</th>
 	  <td>94.48%</td>
 	  <td>99%</td>
 	  <td>94%</td>
+  </tr>
+  <tr>
+	  <th>Logistic Regression</th>
+    	  <td>86.55%</td>
+	  <td></td>
+	  <td></td>
   </tr>
 </table>
