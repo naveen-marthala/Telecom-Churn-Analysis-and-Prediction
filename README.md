@@ -53,8 +53,14 @@ Churn: if the customer has churned (1=yes; 0 = no)
 
 <b>About Code:</b>  
 Logistic Regression and Random Forest Classification has been used for prediction.
-The Accuracy reports are
+The Accuracy, Precision and Recall reports are
 <table style="width:100%">
+  <tr>
+	  <th>algorithm</th>
+	  <th>Accuracy</th>
+	  <th>Precision</th>
+	  <th>Recall</th>
+  </tr>
   <tr>
     <th>Logistic Regression</th>
     <th>Random Forest Classification</th>
