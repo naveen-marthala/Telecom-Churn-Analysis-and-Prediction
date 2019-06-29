@@ -83,6 +83,6 @@ The Recall, Precision , AUC and Accuracy reports are
   
 So, from the above results, it's obvious that,  
 <ol>
-	<li>Logistic Regression' model could capture/predict the customers that were likely to churn(recall) compared to Random Forest. But, not the ones that were not likely to churn.</li>
-	<li>Random Forest's model could capture/predict a mix of both.</li>
+	<li>Logistic Regression' model could capture/predict the customers that were likely to churn(recall) compared to Random Forest. But, not the ones that were not likely to churn and overall customers as well.</li>
+	<li>Random Forest's model could capture/predict a mix of both(F1 Score).</li>
 </ol>
