@@ -55,7 +55,7 @@ Churn: if the customer has churned (1=yes; 0 = no)
 For my analysis, recall was my target metric.  
 We care the most about capturing as many true positives (people who are likely to churn) with our model, and we’re less concerned that we may sweep in some false negatives (people who did not churn) along with them.  
 Logistic Regression and Random Forest Classification has been used for prediction.
-The Recall, Precision , AUC and Accuracy reports are
+The Recall, Precision , F1 Score and Accuracy reports are
 <table style="width:100%">
   <tr>
 	  <th>algorithm</th>
