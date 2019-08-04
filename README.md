@@ -1,4 +1,4 @@
-# telecom--churn-prediction-in-R-and-Python---competition-of-crowdanalytix-
+﻿# telecom--churn-prediction-in-R-and-Python---competition-of-crowdanalytix-
 <b>link to the original competition</b> - https://www.crowdanalytix.com/contests/why-customer-churn
 ----------------
 
@@ -17,7 +17,7 @@ Telecom companies have used two approaches to address churn - (a) Untargeted app
 
  
 
-<b>Role of predictive modeling:</b>  
+<b>Role of predictive modelinng:</b>  
 In the targeted approach the company tries to identify in advance customers who are likely to churn. The company then targets those customers with special programs or incentives. This approach can bring in huge loss for a company, if churn predictions are inaccurate, because then firms are wasting incentive money on customers who would have stayed anyway. There are numerous predictive modeling techniques for predicting customer churn. These vary in terms of statistical technique (e.g., neural nets versus logistic regression versus survival analysis), and variable selection method (e.g., theory versus stepwise selection).
 
  
