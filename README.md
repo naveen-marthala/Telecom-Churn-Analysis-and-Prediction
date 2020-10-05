@@ -1,5 +1,5 @@
-﻿# telecom--churn-prediction-in-R-and-Python---competition-of-crowdanalytix-
-<b>link to the original competition</b> - https://www.crowdanalytix.com/contests/why-customer-churn
+# Telecom Churn Analysis and Prediction in R
+<b>link to the data</b> - https://www.crowdanalytix.com/contests/why-customer-churn/
 ----------------
 
 <b>Description:</b>  
@@ -48,11 +48,18 @@ The objective of this contest is to predict customer churn. We are providing you
 
 <b>Target Variable:</b>  
 Churn: if the customer has churned (1=yes; 0 = no)
+----------------
+
+<b>Analysis Results:</b> 
+Some of things that customers had done before having churned, that I had learnt during EDA are:
+<ul>
+	<li>customers that churned are the ones that called cusomter care most of the time.</li>
+</ul>
 
 ----------------
 
-<b>About Prediction Results:</b>  
-For my analysis, recall was my target metric.  
+<b>Prediction Results:</b>  
+For my analysis, recall was the target metric, (measure the proportion of all correctly predicted customers that churned)
 We care the most about capturing as many true positives (people who are likely to churn) with our model, and we’re less concerned that we may sweep in some false negatives (people who did not churn) along with them.  
 Logistic Regression and Random Forest Classification has been used for prediction.
 The Recall, Precision , F1 Score and Accuracy reports are
