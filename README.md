@@ -51,9 +51,12 @@ Churn: if the customer has churned (1=yes; 0 = no)
 ----------------
 
 <b>Analysis Results:</b> 
-Some of things that customers had done before having churned, that I had learnt during EDA are:
+Some of the observations that I had made during EDA and things customers had done before having churned are:
 <ul>
-	<li>customers that churned are the ones that called cusomter care most of the time.</li>
+	<li>Customers that churned the most are the ones that called customer service more.</li>
+	<li>Most customers that had been charged more had called customer service more.</li>
+	<li>Old customers didn't churn as much as the new ones did.</li>
+	<li>Charge for used minutes wasn't directly proportional to number of minutes used sometimes, which can't happen in real world. (<i>data and the description didn't have much information on how this data was collectd. so, couldn't figure out what actually might have caused this.</i>)</li>
 </ul>
 
 ----------------
@@ -72,6 +75,13 @@ The Recall, Precision , F1 Score and Accuracy reports are
 	  <th>Accuracy</th>
   </tr>
   <tr>
+	  <th>Logistic Regression</th>
+	  <td>97%</td>
+	  <td>87%</td>
+	  <td>91.73%</td>
+    	  <td>86.55%</td>
+  </tr>
+  <tr>
     	  <th>Random Forest Classification</th>
 	  <td>94%</td>
 	  <td>99%</td>
@@ -79,17 +89,10 @@ The Recall, Precision , F1 Score and Accuracy reports are
 	  <td>94.48%</td>
 	  
   </tr>
-  <tr>
-	  <th>Logistic Regression</th>
-	  <td>97%</td>
-	  <td>87%</td>
-	  <td>91.73%</td>
-    	  <td>86.55%</td>
-  </tr>
 </table>
   
 So, from the above results, it's obvious that,  
 <ol>
-	<li>Logistic Regression' model could capture/predict the customers that were likely to churn(recall) compared to Random Forest. But, not the ones that were not likely to churn and overall customers as well.</li>
-	<li>Random Forest's model could capture/predict a mix of both(F1 Score).</li>
+	<li>Logistic Regression' was relatively able to better capture/predict the customers that are likely to churn(recall) compared to Random Forest. But, not the ones that were not likely to churn and overall customers as well.</li>
+	<li>Random Forest's model could capture/predict a healthy mix of both, as given by F1 Score.</li>
 </ol>
